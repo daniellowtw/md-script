@@ -1,0 +1,18 @@
+[project]
+name = "openmm-md"
+version = "0.1.0"
+description = "OpenMM molecular dynamics simulation with GCMC water equilibration"
+authors = ["Your Name <your.email@example.com>"]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-64", "osx-arm64"]
+
+[dependencies]
+python = ">=3.9,<3.12"
+openmm = "*"
+pdbfixer = "*"
+numpy = "*"
+
+[tasks]
+run = "python openmm_md_simulation.py"
+clean = "rm -f *.pdb *.log trajectory.pdb simulation.log"
+

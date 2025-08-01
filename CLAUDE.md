@@ -8,20 +8,20 @@ This repository contains a single Python script for running OpenMM molecular dyn
 
 ## Common Commands
 
-### Running the simulation
+### Installing dependencies and running the simulation
+The project uses pixi for dependency management. Install dependencies with:
 ```bash
-python3 openmm_md_simulation.py
+pixi install
 ```
 
-### Installing dependencies
-The script requires several Python packages. Install them with:
+Run the simulation:
 ```bash
-pip install openmm pdbfixer numpy
+pixi run run
 ```
 
-For CUDA support (recommended for performance):
+Clean up output files:
 ```bash
-conda install -c conda-forge openmm pdbfixer numpy
+pixi run clean
 ```
 
 ## Code Architecture

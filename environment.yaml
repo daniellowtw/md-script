@@ -1,0 +1,12 @@
+name: openmm-md
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - openmm
+  - pdbfixer
+  - numpy
+  - pip
+  - pip:
+      - urllib3
+
